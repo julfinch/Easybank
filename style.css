@@ -575,7 +575,7 @@ footer a {
     }
     /*=========== HEADERS SECTION ===========*/
     header {
-        height: 110vh;
+        height: 97vh;
     }
     .header-container {
         display: flex;
@@ -595,6 +595,7 @@ footer a {
         transform: translateY(0%);
         align-items: center;
         text-align: center;
+        margin-top: -1rem;
     }
     .header-left-content h4 {
         width: var(--container-width-sm);
