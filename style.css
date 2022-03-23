@@ -165,10 +165,10 @@ nav button {
     display: none;
 }
 
-/*=======var(--color-gray)========= HEADER =================*/
+/*================ HEADER =================*/
 header {
     height: 90vh;
-    background: yellow;
+    background: var(--color-gray);
     position: relative;
     top: 5rem;
     z-index: 10;
@@ -191,7 +191,6 @@ header {
 .header-left {
     flex: 50%;
     align-items: center;
-    background: red;
 }
 .header-left-content {
     position: absolute; 
@@ -221,9 +220,9 @@ header {
     animation: slideInFromRight 1s ease-in-out forwards;
 }
 
-/*========var(--color-light-blue)======== FEATURES SECTION =================*/
+/*================ FEATURES SECTION =================*/
 .features-section {
-    background: aqua;
+    background: var(--color-light-blue);
     flex-wrap: wrap;
 }
 .features-header {
@@ -257,9 +256,9 @@ header {
     font-size: 1rem;
 } 
 
-/*========var(--color-gray)======== ARTICLES SECTION =================*/
+/*================ ARTICLES SECTION =================*/
 .articles-section {
-    background: yellow;
+    background: var(--color-gray);
     flex-wrap: wrap;
 }
 .articles-container {
@@ -372,9 +371,6 @@ footer a {
     margin: 1.8rem 0;
     width: 19rem;
     }
-    .invite-button {
-        padding: 0.6rem 1.6rem;
-    }
     .header-right-image {
         top: -5rem;
         right: -2.8rem;
@@ -451,9 +447,6 @@ footer a {
     }
     .nav-menu li a  {
         color: var(--color-dark-blue);
-    }
-    .nav-menu li a:hover {
-        padding-bottom: 0.3rem;
     }
     #open-menu-btn {
         display: inline-block;
@@ -582,7 +575,7 @@ footer a {
     }
     /*=========== HEADERS SECTION ===========*/
     header {
-        height: 100vh;
+        height: 95vh;
     }
     .header-container {
         display: flex;
@@ -598,11 +591,8 @@ footer a {
     .header-left-content {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         position: unset;
         transform: translateY(0%);
-        flex: auto;
-        justify-content: center;
         align-items: center;
         text-align: center;
     }
@@ -611,8 +601,9 @@ footer a {
     }
     .header-right  {
         background-image: url(./images/image-mockups.png), url(./images/bg-intro-mobile.svg);
-        background-position: center 130%, 100% 85%;
-        background-size: 88% 130%, 100% 130%;
+        background-position: center 110%, 100% 63%;
+        background-size: 85% 150%, 100% 130%;
+        
     }
     .header-right-image img {
         display: none;
@@ -625,7 +616,7 @@ footer a {
         gap: 2rem;
     }
     .features-section-container h2 {
-        margin: 1rem 0 1.2rem;
+        margin: 3rem 0 1.2rem;
     }
     .feature-image img {
         width: 22%;
@@ -633,4 +624,10 @@ footer a {
     .feature-info h3  {
         margin: 1.1rem 0;
     }
+}
+@media (max-width: 416px) {
+    .header-right  {
+        background-position: center 125%, 100% 65%;
+        background-size: 94% 130%, 100% 130%;
+    } 
 }
