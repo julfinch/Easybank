@@ -526,7 +526,7 @@ footer a {
     }
     h4 {
         font-size: 1rem !important;
-        line-height: 1.4rem !important;
+        line-height: 1.2rem !important;
     }
     h5 {
         font-size: 0.9rem !important;
@@ -575,7 +575,7 @@ footer a {
     }
     /*=========== HEADERS SECTION ===========*/
     header {
-        height: 96vh;
+        height: 110vh;
     }
     .header-container {
         display: flex;
@@ -598,10 +598,10 @@ footer a {
     }
     .header-left-content h4 {
         width: var(--container-width-sm);
-        margin: 2.1rem 0 1.9rem;
+        margin: 1.9rem 0 1.9rem;
     }
     .header-left-content .invite-button {
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
     }
     .header-right  {
         background-image: url(./images/image-mockups.png), url(./images/bg-intro-mobile.svg);
