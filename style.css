@@ -26,7 +26,7 @@
     --transition: all 400ms ease;
 }
 
-body {
+body, html {
     font-family: 'Public Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -464,8 +464,8 @@ footer a {
         overflow-wrap: break-word;
     }
     .header-right-image {
-    top: -1.4rem;
-    right: -1rem;
+        top: -1.4rem;
+        right: -1rem;
     }
     /*======= FEATURES SECTION =========*/
     .features-section{

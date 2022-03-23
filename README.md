@@ -11,10 +11,8 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -40,46 +38,52 @@ Users should be able to:
 
 ## My process
 
+1. Built the '<nav>' with the links and request invite button inside it.
+2. Came next is the hero section which I put inside the '<header>' where I created 2 equal flexboxes, the left and the right. The left flexbox is for the text content and the right is for both the ==bg-intro-desktop.png== and ==image-mockups.png==.
+3. After that is the **Features Section** where I used CSS Grid to create 4 equal grid for each features of Easybank.
+4. Next is the **Articles Section** where I used the same CSS Grid to the 4 articles.
+5. Lastly is the '<footer>' where I also used CSS Grid to create 5 boxes of different sizes a seen in ==desktop-design.png==.
+6. After the web layout, I focused next to its mobile responsiveness for 4 different media widths.
+7. As for the hamburger menu, I used Vanilla Javascript to control its appearance and disappearance.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Vanilla Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This is my first project where I was able to solve how to program a hamburger menu using Vanilla Javascript. I am proud of this project because I am finally confident how to write a simple HTML DOM for click events as shown below:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const openBtn = document.getElementById("open-menu-btn");
+const closeBtn = document.getElementById("close-menu-btn");
+const menuItem = document.querySelector(".nav-menu");
+const gradientBg = document.getElementById("header-gradient");
+
+openBtn.addEventListener("click", () => {
+    menuItem.style.display = "block";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+    gradientBg.style.display = "block";
+});
+
+const closeNav = () => {
+    menuItem.style.display = "none";
+    openBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+    gradientBg.style.display = "none";
 }
+closeBtn.addEventListener("click", closeNav);
+gradientBg.addEventListener("click", closeNav);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+---
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I also learned in this project on how to manipulate an SVG file to change its color upon hovering the mouse above it. I can also change some of the colors of its design thanks to the resources I found on the internet. I attached the links for that undder *Useful Resources*.
 
 ### Useful resources
 
@@ -90,7 +94,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Frontend Mentor - [@julfinch](https://www.frontendmentor.io/profile/julfinch)
 - Twitter - [@julfinch](https://www.twitter.com/julfinch)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
