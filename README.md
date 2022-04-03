@@ -39,10 +39,10 @@ Users should be able to:
 ## My process
 
 1. Built the '<nav>' with the links and request invite button inside it.
-2. Came next is the hero section which I put inside the '<header>' where I created 2 equal flexboxes, the left and the right. The left flexbox is for the text content and the right is for both the ==bg-intro-desktop.png== and ==image-mockups.png==.
+2. Came next is the hero section which I put inside the '<header>' where I created 2 equal flexboxes, the left and the right. The left flexbox is for the text content and the right is for both the *bg-intro-desktop.png* and *image-mockups.png*.
 3. After that is the **Features Section** where I used CSS Grid to create 4 equal grid for each features of Easybank.
 4. Next is the **Articles Section** where I used the same CSS Grid to the 4 articles.
-5. Lastly is the '<footer>' where I also used CSS Grid to create 5 boxes of different sizes a seen in ==desktop-design.png==.
+5. Lastly is the '<footer>' where I also used CSS Grid to create 5 boxes of different sizes a seen in *desktop-design.png*.
 6. After the web layout, I focused next to its mobile responsiveness for 4 different media widths.
 7. As for the hamburger menu, I used Vanilla Javascript to control its appearance and disappearance.
 
@@ -83,7 +83,8 @@ gradientBg.addEventListener("click", closeNav);
 
 ---
 
-I also learned in this project on how to manipulate an SVG file to change its color upon hovering the mouse above it. I can also change some of the colors of its design thanks to the resources I found on the internet. I attached the links for that undder *Useful Resources*.
+I also learned in this project on how to manipulate an SVG file to change its color upon hovering the mouse above it. I can also change some of the colors of its design thanks to the resources I found on the internet. I attached the links for that undder *Useful Resources*. The caveat in this technique is that the svg file must be black first, in my case where my svg file is colored white, for this to take effect, I have to paste the resulting filter values first then add **brightness(0) saturate(100%)** values at the start so it will convert the color first to black then proceeds to my target color.
+
 
 ### Useful resources
 
